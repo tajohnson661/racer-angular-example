@@ -1,0 +1,12 @@
+{
+  "name": "racer-angular-example",
+  "description": "An example of racer working with angular",
+  "version": "0.0.1",
+  "homepage": "https://github.com/tajohnson661/racer-angular-example.git",
+  "license": "MIT",
+  "private": true,
+  "dependencies": {
+    "angular": "~1.4.0",
+    "angular-ui-router": "~0.2.15"
+  }
+}

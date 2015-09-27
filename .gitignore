@@ -1,0 +1,10 @@
+.DS_Store
+.nodemonignore
+.sass-cache/
+*.log
+node_modules/
+app/bower_components/
+.bower-*/
+.idea/
+*.pem
+

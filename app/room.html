@@ -1,0 +1,11 @@
+<section data-ng-controller="AppCtrl" data-ng-init="initData()">
+
+    <a ui-sref="home">Back home</a>
+
+    <h1>Room {{roomId}}</h1>
+    <div id="pad-container">
+        <div data-ng-repeat="pad in padList">
+            <textarea class="pad" id="pad{{$index}}" data-ng-model="pad.text" ng-change="textChanged($index);"></textarea>
+        </div>
+    </div>
+</section>
