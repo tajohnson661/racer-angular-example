@@ -47,7 +47,7 @@ app.controller('AppCtrl', ['$scope', '$http', '$timeout', '$stateParams', '$wind
             //$window.MODEL = MODEL;
 
             // model.at() scopes all model operations underneath a particular path
-            model = MODEL.at('_page.room.' + $stateParams.roomId);
+            model = MODEL.at('_page.room');
             console.log('model');
             console.log(model);
             console.log('****');

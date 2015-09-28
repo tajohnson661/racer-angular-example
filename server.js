@@ -91,7 +91,7 @@ app.get('/racer/:roomId', function(req, res, next) {
             if (err) {
                 return next(err);
             }
-            list = model.refList('_page.room.' + roomName, 'notes', $noteIds);
+            list = model.refList('_page.room', 'notes', $noteIds);
             aList = list.get();
             console.log('list.get is: ');
             console.log(aList);
