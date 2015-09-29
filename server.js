@@ -1,15 +1,12 @@
 var http = require('http');
 var express = require('express');
 var liveDbMongo = require('livedb-mongo');
-var redis = require('redis').createClient();
 var racerBrowserChannel = require('racer-browserchannel');
 var racer = require('racer');
 racer.use(require('racer-bundle'));
 
-//redis.select(14);
 var store = racer.createStore({
-    db: liveDbMongo('mongodb://localhost:27017/racer-angular-example?auto_reconnect', {safe: true}),
-    redis: redis
+    db: liveDbMongo('mongodb://localhost:27017/racer-angular-example?auto_reconnect', {safe: true})
 });
 
 app = express();

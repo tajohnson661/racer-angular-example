@@ -19,12 +19,11 @@ The application uses Racer without Derby.  It's a node.js application and uses [
 application framework.  It also uses the following:
 
 * MongoDB
-* Redis
 * Browserchannel
 * Browserify (as part of Racer for getting racer down to the client)
 
 Naturally, the package.json file will install the appropriate dependencies, but you'll also need access to a MongoDB
-database server and a Redis server.
+database server.
 
 ## Getting started
 
@@ -32,7 +31,6 @@ database server and a Redis server.
  2. npm install
  3. bower install
  4. Point to the correct MongoDb database
- 5. Set up redis locally and run the server.
 
 ## Run the Application
 
